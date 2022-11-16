@@ -22,3 +22,32 @@ function reverseString(str) {
 	
 }
 console.log(reverseString('hello'));
+
+class Calculator {
+	constructor(number1, number2) {
+		this.number1 = number1;
+		this.number2 = number2;
+	}
+	add() {
+		return this.number1 + this.number2;
+	}
+
+	subtract() {
+		return this.number1 - this.number2;
+	}
+
+	multiply() {
+		return this.number1 * this.number2;
+	}
+
+	divide() {
+		return this.number1 / this.number2;
+	}
+}
+
+const firstTask = new Calculator(20 , 6)
+
+console.log(firstTask.subtract());
+console.log(firstTask.add());
+console.log(firstTask.multiply());
+console.log(firstTask.divide());
